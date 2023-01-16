@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+body{
+    margin: 0px;
+    width: auto;
+    font-family: 'Work Sans';
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/*configurando tamanho de logo*/
+.imag {
+    width: 100px;
+}
+
+/*Introdução*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content:space-between;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*Configurando seção de perfil*/
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /*background: olive;*/
+}
+.intro>div{
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 5px 5px #C0C0C0;
+}
+
+/*Configurando a imagem de perfil*/
+.imag1 {
+    width: auto;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+/*Configurando a seção dos blocos*/
+.add-quad {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*configurando os blocos*/
+.add-quad>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    /*background: sandybrown;*/
+    margin: 10px;
+    border:1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #C0C0C0;
+}
+
+/*configurando texto*/
+h4{
+    padding: 10px;
+    text-align: center;
+}
+p, h2,h3{
+    padding: 15px;
+    text-align: justify;
+    font-size: 14pt;
+    font-weight: 500;
+}
+ul{
+    list-style-type: none;
+}
+
+/*configurando botões*/
+button{
+    border: 1px solid #4682B4;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ADD8E6;
+}
+button>a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+button:hover{
+    background-color: white;
+}
+
+/*configurando lista de bibliotecas*/
+li{
+    margin: 5px;
+}
+.add-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+.add-list>li{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.add-list>li:hover{
+    background-color:#87CEEB;
+}
+
+/*Configurando tamanho de imagem global nos divs*/
+img {
+    width: 100%;
+    height: 40%;
+}
+
+/*configurando os botões*/
+.add-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px;
+}
+/*Estilizando os botões*/
+.add-button >button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*configurando rodapé*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4682B4;
+    font-weight: 700;
+    width: auto;
+    height: 100px;
+}
+.footer:hover{
+    background: #C0C0C0;
+}
+
+/*tamanho de tela*/
+@media screen and (max-width:600px){
+    .intro{
+        flex-direction: column;
+        width: auto;
+    }
+    .add-list{
+        flex-direction: column;
+        width: auto;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="imag" src="images/logo.jpg" alt="">
+        <h1>Portfólio Data Science</h1>
+    </header>
+    <hr>
+    <!-- Introdução -->
+    <section class="intro">
+        <div>
+            <img class="imag1" src="images/perfil.png" alt="">
+        </div>
+
+        <!-- Falta Conteúdo e estilização -->
+        <div>
+            <h2>Sobre</h2>
+            <p>
+                Meu nome é Odilena Oliveira, tenho 24 anos, moro no Belém do Pará, concluir a faculdade de Data Science.
+                Por que escolhi a área de tecnologia? Diria, como se fosse um outro universo a ser explorado, e quanto mais eu percorro 
+                sobre ele, mas admirada eu fico com o que ele pode criar, e vejo o quanto tenho o que aprender com ele. 
+                Estou disposta a aprender com os bons e os experientes profissionais da área.
+                Como podem ver abaixo, este são os pequenos projetos que criei com base nos meus estudos. Pretendo continuar estudando e 
+                aprimorar cada vez mais o conhecimento sobre a área.
+                Seja bem vindo!!! 
+            </p>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="add-list-hab">
+        <div>
+            <h3>Conhecimentos</h3>
+            <ul class="add-list">
+                <li>Linguagem de Programação Python</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Plotly</li>
+                <li>Sklearn</li>
+                <li>Streamlit</li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <h1 class="h1">Projetos</h1>
+    </div>
+    <!-- Análise EDA -->
+    <section class="add-quad">
+
+        <div>
+            <img src="images/pexels-kindel-media-7054417.jpg" alt="papel A4 com gráficos">
+            <h3>Análise de Criminalidade</h3>
+            <p>
+                Neste notebook é feita a EDA sobre criminalidades ocorridas nos distritos da EUA, faço a
+                manipulação e transformação dos dados, utilizando de gráficos e tabelas, demonstrando os
+                principais distritos que mais ocorrem crimes, quantidade de vítimas por ano e os tipos de crimes.
+                Para uso no notebbok, usei a biblioteca do ipywidgets para filtragem dos dados.
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Seaborn</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Folium</li>
+                <li>ipywidgets</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/eda_criminalidade_US">Código</a></button>
+                <button><a href="">Indisponível</a></button>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/pexels-leeloo-thefirst-5561913.jpg" alt="papel A4 com gráficos">
+            <h3>Análise de Streaming</h3>
+            <p>
+                Neste notebook é feita a EDA sobre os conteúdos de serviço de Streaming, faço a manipulação e transformação dos dados,
+                utilizo gráficos para buscar quais os conteúdos mais adicionados ao ano, uma lista de conteúdos mais antigos e recentes,
+                quantos lançamentos ao ano.
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Streamlit</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Plotly</li>
+                <li>Counter</li>
+                <li>WordCloud</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/eda_servico_streaming">Código</a></button>
+                <button type="button"><a href="https://odilenaoliveira-eda-streamlit-eda-flix-s9uhez.streamlit.app/">Acesse</a></button>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/pexels-lukas-590041.jpg" alt="papel A4 com gráficos">
+            <h3>Análise de Relação de Atritos pelos Funcionários</h3>
+            <p>
+                Neste notebook é feita a EDA, sobre existência de atritos pelo tipo de trabalho, quais gêneros são mais afetados
+                quantos anos a pessoa está na empresa e com o mesmo gerente, qual grupo recebe em média por ano e profissão. 
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Streamlit</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Seaborn</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/eda_analise_rh">Código</a></button>
+                <button><a href="https://odilenaoliveira-eda-analise-rh-intro-uq79rw.streamlit.app/">Acesse</a></button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Análise Class-->
+    <section class="add-quad">
+        <div>
+            <img src="images/pexels-lukas-669614.jpg" alt="papel A4 com gráficos">
+            <h3>Análise de Classificação Doença Cardíaca</h3>
+            <p>
+                Neste notebook é feita a EDA, assim veremos as relações entre as colunas, qual paciente por gênero é mais afetado, qual 
+                a idade mais frequente, entre outros. Em seguida, criei modelos para a previsão e escolher o melhor resultado de acurácia do modelo.
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Sklearn</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Seaborn</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/doenca_cardiaca_eda_class">Código</a></button>
+                <button><a href="">Indisponível</a></button>
+            </div>
+        </div>
+        <!--
+        <div>
+            <img src="images/pexels-lukas-669617.jpg" alt="papel A4 com gráficos">
+            <h3>Análise de Criminalidade</h3>
+            <p>Neste notebook é feita a EDA</p>
+            <ul>
+                <li>Streamlit</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li></li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="">Código</a></button>
+                <button><a href="">Indisponível</a></button>
+            </div>
+        </div>
+    -->
+    </section>
+
+    <!-- Análise Regressão-->
+    <section class="add-quad">
+
+        <div>
+            <img src="images/pexels-lukas-669617.jpg" alt="papel A4 com gráficos">
+            <h3>Análise dos Preço de Carros Usados</h3>
+            <p>
+                Neste notebook é feita a EDA, o conjunto de dados se refere a venda dos carros usados ao longo dos anos, 
+                como a marca, a quilometragem e o Estado de localização, além dos modelos de predição.
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Sklearn</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Seaborn</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/car_streamlit">Código</a></button>
+                <button type="button"><a href="">Indisponível</a></button>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/pexels-mikael-blomkvist-6476589.jpg" alt="papel A4 com gráficos">
+            <h3>Análise dos Custos Médicos</h3>
+            <p>
+                Neste notebook é feita a EDA, oconjunto de dados, é referente aos dados pessoais de custo médico.
+                Os dados contém o sexo do contratante homem ou mulher, idade, dependentes, BMI, se os pacientes 
+                são fumantes ou não, a região e os custos médicos. Em seguida, criei os modelos para a previsão de seguro.
+            </p>
+            <h4>Bibliotecas</h4>
+            <ul>
+                <li>Streamlit</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Sklearn</li>
+            </ul>
+            <div class="add-button">
+                <button type="button"><a href="https://github.com/odilenaoliveira/charges_streamlit">Código</a></button>
+                <button><a href="https://odilenaoliveira-charges-streamlit-intro-hueiu7.streamlit.app/">Acesse</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div>E-mail: odilenaolivier@gmail.com</div>
+    </section>
+</body>
+</html>
