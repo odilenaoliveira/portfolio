@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Classe Banner**/
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.banner header p{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.50;
+}
+.banner .content{
+    position: relative;
+    width: 750px;
+    text-align: center;
+}
+.banner .content h2{
+    color: black;
+    font-size: 60px;
+}
+
+/** Classe Sobre**/
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .content{
+    background: #A569BD;
+    padding: 100px;
+    width: 50%;
+}
+
+.about .content h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about .content p{
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-align: justify;
+}
+
+.about .imgBox{
+    background: url('images/panda_circulo.png');
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .imgBox img{
+    width: 100%;
+    height: 100%;
+}
+/** Classe Conhecimento **/
+.knowledge{
+    background: #B2BABB;
+    padding: 100px;
+    text-align: center;
+}
+.knowledge .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.knowledge .container .content{
+    position: relative;
+    background: #fff;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+}
+.knowledge h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.knowledge .container .content h2:hover{
+    letter-spacing: 5px;
+    transition: 0.6s;
+}
+
+/** Classe Card**/
+/* posição do card na página */
+.containerCard{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/*tamanho do card*/
+.containerCard .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 40px 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+/* tamanho da altura/quanto o meu card vai descer ao passar o mouse*/
+.containerCard .card:hover{
+    height: 490px;
+}
+
+/*tamanho do local da imagem e posição dela*/
+.containerCard .card .imgBox{
+    position: relative;
+    width: 240px;
+    top: -70px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.containerCard .card .imgBox img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.containerCard .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: justify;
+    visibility: hidden;/*deixando o texto invisivel*/
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.containerCard .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/* link botão */
+.containerCard .card .content .btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+    
+}
+.containerCard .card .content .btn a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid #B2BABB;
+    border-radius: 15px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.containerCard .card .content .btn a:hover{
+    box-shadow: 0 5px 10px #d9a4ee;
+    letter-spacing: 5px;
+    background: #ADD8E6;
+}
+
+/**Rodapé**/
+footer{
+    background: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+footer ul li img{
+    max-width: 20px;
+}
+
+@media (max-width:991px){
+    .banner header {
+        justify-content: center;
+    }
+    .banner .content h2 {
+        margin: 20px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .content {
+        width: 100%;
+        text-align: justify;
+        padding: 30px 20px;
+    }
+    .about .content h2 {
+        text-align: center;
+    }
+    .about .imgBox {
+    width: 100%;
+    height: 50vh;
+    }
+
+    .about .content p {
+        padding: 10px 20px;
+    }
+    .knowledge h2 {
+        display: flex;
+        justify-content: center;
+    }
+    footer ul {
+        flex-direction: column;
+    }
+}
